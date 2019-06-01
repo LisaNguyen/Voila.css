@@ -1,0 +1,64 @@
+.cover-and-align {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
+    grid-gap: 2.5em;
+    margin: 3em;
+}
+
+.voila {
+    position: relative;
+    overflow: hidden;
+
+    &__text {
+        @extend .cover-and-align;
+
+        p { 
+            display: none;
+            width: 80%;
+            line-height: 1.5em;
+            font-size: 1.5em;
+            color: #fafafa;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__flip-container {
+        -webkit-perspective: 700px;
+        perspective: 700px;
+    }
+    
+    .flip {
+        &__front,
+        &__back {
+            margin: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        &__front {
+            position: relative;
+        }
+
+        &__back {
+            @extend .cover-and-align;
+            background-color: #3D496D;
+            padding: 3em;
+            width: auto;
+        }
+    }
+}

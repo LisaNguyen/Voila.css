@@ -1,0 +1,40 @@
+.header {
+    height: 100vh;
+    
+    &__container {
+        position: absolute;
+        top: 42.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 60%;
+    }
+    
+    &__headline {
+        margin: 0;
+        font-size: 6.5em;
+    }
+    
+    &__introduction {
+        font-family: 'Merriweather', serif;
+        font-size: 1.75em;
+        line-height: 1.75em;
+    }
+    
+    &__buttons {
+        .btn {
+            border: 0;
+            background: linear-gradient(45deg, #FFA63D, #FF3D77);
+            border-radius: 5em;
+            color: #fff;
+            font-size: 1.25em;
+            font-weight: 500;
+            padding: 1.25em 1.5em;
+            transition: transform .4s ease-in;
+        }
+        
+        .btn:not(:last-child) {
+            margin-right: 0.75em;
+        }
+    }
+}
