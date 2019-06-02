@@ -1,0 +1,27 @@
+.footer {
+    display: inline-flex;
+    align-content: center;
+    margin: 3em;
+    
+    &__logo {
+        width: 3.5em;
+        height: 3.5em;
+    }
+    
+    &__credits {
+        font-size: 1.2em;
+        margin-left: 1em;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 700;
+        
+        a {
+            color: #000;
+        }
+        
+        a:hover {
+            color: #B42929;
+        }
+    }
+}

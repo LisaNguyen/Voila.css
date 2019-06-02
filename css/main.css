@@ -7,6 +7,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 10px; }
 
+a {
+  text-decoration: none; }
+
 .header {
   height: 100vh;
   width: 100vw; }
@@ -27,6 +30,15 @@ body {
     font-family: 'Merriweather', serif;
     font-size: 1.75em;
     line-height: 1.75em; }
+  .header__credits {
+    margin-top: -1.5em;
+    margin-bottom: 1.5em;
+    color: #8E8E8E;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700;
+    font-size: 0.5em; }
+    .header__credits a {
+      color: #8E8E8E; }
   .header__buttons {
     display: inline-flex; }
     .header__buttons .btn {
@@ -39,7 +51,6 @@ body {
       margin: 0 1.25em; }
       .header__buttons .btn a {
         padding: 1.25em 1.5em;
-        text-decoration: none;
         color: #fff;
         font-size: 1.25em; }
     .header__buttons .btn:not(:last-child) {
@@ -60,6 +71,13 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(45em, 1fr));
   grid-gap: 2.5em;
   margin: 3em; }
+
+.code-sample {
+  border: none;
+  height: 21em;
+  width: 50%;
+  font-family: 'Merriweather', serif;
+  line-height: 2em; }
 
 .voila {
   position: relative;
@@ -176,6 +194,25 @@ body {
   opacity: 1; }
   .slide-container:hover .slide-down p {
     display: block; }
+
+.footer {
+  display: inline-flex;
+  align-content: center;
+  margin: 3em; }
+  .footer__logo {
+    width: 3.5em;
+    height: 3.5em; }
+  .footer__credits {
+    font-size: 1.2em;
+    margin-left: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 700; }
+    .footer__credits a {
+      color: #000; }
+    .footer__credits a:hover {
+      color: #B42929; }
 
 @media only screen and (max-width: 525px) {
   .container {

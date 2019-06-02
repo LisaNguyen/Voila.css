@@ -25,6 +25,19 @@
         line-height: 1.75em;
     }
     
+    &__credits {
+        margin-top: -1.5em;
+        margin-bottom: 1.5em;
+        color: #8E8E8E;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 700;
+        font-size: 0.5em;
+        
+        a {
+            color: #8E8E8E;
+        }
+    }
+    
     &__buttons {
         display: inline-flex;
         
@@ -39,7 +52,6 @@
              
             a {
                 padding: 1.25em 1.5em;
-                text-decoration: none;
                 color: #fff;
                 font-size: 1.25em;
             }
