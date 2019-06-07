@@ -1,5 +1,19 @@
 @media only screen and (max-width: 525px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(40em, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    }
+
+    .header {
+        &__headline {
+            font-size: 4.5em;
+        }
+
+        &__buttons {
+            display: block; 
+
+            .btn:not(:last-child) {
+                margin-bottom: 1em;
+            }
+        }
     }
 }
