@@ -2,19 +2,19 @@
     0% {
         transform: scale(1);
     }
-    
+
     25% {
         transform: scale(1.1);
     }
-    
+
     50% {
         transform: scale(1);
     }
-    
+
     75% {
         transform: scale(1.1);
     }
-    
+
     100% {
         transform: scale(1);
     }
@@ -24,11 +24,11 @@
     0% {
         opacity: 0;
     }
-    
+
     80% {
         transform: scale(1.15);
     }
-    
+
     100% {
         transform: scale(1);
          opacity: 1;
@@ -54,7 +54,7 @@
 .fade-in:hover,
 .spin-in:hover {
     opacity: 1;
-    
+
     p {
         display: block;
     }
@@ -77,26 +77,26 @@
         -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
     }
-    
+
     &-right {
         .flip__back {
             -webkit-transform: rotateY(180deg);
             transform: rotateY(180deg);
         }
     }
-    
+
     &-right:hover {
         -webkit-transform: rotate3d(0, 1, 0, 180deg);
         transform: rotate3d(0, 1, 0, 180deg);
     }
-        
+
     &-down {
         .flip__back {
             -webkit-transform: rotateX(180deg);
             transform: rotateX(180deg);
         }
     }
-    
+
     &-down:hover {
         -webkit-transform: rotate3d(1, 0, 0, 180deg);
         transform: rotate3d(1, 0, 0, 180deg);
@@ -110,12 +110,12 @@
         visibility: hidden;
         background-color: #3D496D;
     }
-    
+
     &-in {
          -webkit-transform: translateX(-100%);
-         transform: translateX(-100%); 
+         transform: translateX(-100%);
     }
-    
+
     &-down {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%);
@@ -127,19 +127,19 @@
         visibility: visible;
         -webkit-transform: translateX(0%);
         transform: translateX(0%);
-        transform: translateZ(0);    
+        transform: translateZ(0);
         p {
             display: block;
         }
     }
-    
+
     .slide-down {
         visibility: visible;
         -webkit-transform: translateY(0%);
         transform: translateY(0%);
         transform: translateZ(0);
         opacity: 1;
-    
+
         p {
             display: block;
         }
